@@ -61,9 +61,9 @@ script:
     then:
       - while:
           condition:
-            lambda: 'return id(intervalSelect).current_option().value_or("Off") != "Off";'
+            lambda: 'return id(intervalSelect).current_option() != "Off";'
           then:
-            - delay: !lambda 'return atoi(id(intervalSelect).current_option().value_or("0").c_str()) * 60000;'
+            - delay: !lambda 'return atoi(id(intervalSelect).current_option().c_str()) * 60000;'
             - button.press: theSquirter
 
 binary_sensor:

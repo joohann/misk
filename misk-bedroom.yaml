@@ -10,4 +10,4 @@ substitutions:
   maxSquirts: "2500"
 
 packages:
-  misk: !include common/misk.yaml
+  misk: !include misk.yaml

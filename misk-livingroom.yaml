@@ -1,0 +1,13 @@
+substitutions:
+  device: "misk-livingroom"
+  spray_pin: "D8"
+  interval1: "10"
+  interval2: "30"
+  interval3: "60"
+  interval4: "120"
+  interval5: "240"
+  squirt_pulse: "150ms"
+  maxSquirts: "2500"
+
+packages:
+  misk: !include common/misk.yaml

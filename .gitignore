@@ -1,0 +1,14 @@
+# ESPHome secrets — never commit
+secrets.yaml
+
+# ESPHome build artifacts
+.esphome/
+.pioenvs/
+.piolibdeps/
+
+# Editor / OS
+.DS_Store
+.vscode/
+.idea/
+*.swp
+*~

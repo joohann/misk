@@ -127,8 +127,9 @@ sensor:
   - platform: template
     id: can_level
     name: "${device} can"
-    device_class: volume
     unit_of_measurement: "%"
+    state_class: measurement
+    icon: mdi:spray-bottle
     update_interval: ${interval1}min
     lambda: |-
       return ((${maxSquirts} - id(squirts)) / ${maxSquirts}) * 100;
